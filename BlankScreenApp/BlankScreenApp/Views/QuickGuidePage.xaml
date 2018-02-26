@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:MvxContentPage x:TypeArguments="viewModels:QuickGuideViewModel" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+             xmlns:viewModels="clr-namespace:BlankScreenApp.ViewModels;assembly=BlankScreenApp"
+             x:Class="BlankScreenApp.Views.QuickGuidePage">
+    <views:MvxContentPage.Content>
+        <StackLayout Padding="40">
+            <Label Text="How to reproduce: " />
+            <Label Text="1. Launch the app" />
+            <Label Text="2. Tap on QUICK GUIDE button" />
+            <Label Text="3. Close app with back button" />
+            <Label Text="4. Open app by tapping on its icon " />
+            <Label Text="5. Tap on QUICK GUIDE" />
+
+            <Button Text="Go to MainPage" Command="{Binding NavigateToMainPage}" />
+        </StackLayout>
+    </views:MvxContentPage.Content>
+</views:MvxContentPage>
